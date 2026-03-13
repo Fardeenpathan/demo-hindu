@@ -68,11 +68,11 @@ export default function Home() {
     <div>
       <div
         className="
-    bg-[url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1772020634/aura_demo_mobile_ejxmkd.webp')]
+    bg-[url('/assets/mobile_back.jpg')]
     md:bg-[url('/assets/water_bg.jpg')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
-      <div className=" pt-24 md:pb-50 lg:pb-100 relative z-10 pb-24">
-          <h2 className="text-[#15528A]  text-center leading-tight text-[70px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0 flex flex-col items-center gap-y-2">
+      <div className=" md:pt-24 pt-4 md:pb-50 lg:pb-100 relative z-10 pb-24">
+          <h2 className="text-[#15528A]  text-center leading-tight text-[30px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0 flex flex-col items-center gap-y-2">
             <span className="font-parisienne">Dhiraj</span>
             <span className="text-xl sm:text-3xl tracking-[10px] font-cormorant">WEDS</span>
             <span className="font-parisienne">Ritika</span>
