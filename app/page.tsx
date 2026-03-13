@@ -204,6 +204,17 @@ export default function Home() {
 
         </div>
       </div>
+
+      <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat">
+        <div className="lg:h-325 md:h-180">
+        </div>
+      </div>
+
+      {/* mobile visible section */}
+      <div className="md:hidden bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat">
+        <div className="h-210">
+        </div>
+      </div>
       <CoupleMessage />
       <MarriageCountdown />
     </div>
