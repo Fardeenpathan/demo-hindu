@@ -70,35 +70,18 @@ export default function Home() {
         className="
     bg-[url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1772020634/aura_demo_mobile_ejxmkd.webp')]
     md:bg-[url('/assets/water_bg.jpg')]
-    bg-cover
-    bg-no-repeat
-    bg-top
-    md:bg-center
-    w-full
-    px-4 sm:px-8
-    overflow-hidden
-    relative
-  "
-      ><div className=" pt-24 md:pb-50 lg:pb-120 relative z-10 pb-24">
-
-          <h2 className="text-[#15528A]  text-center leading-tight
-     text-[70px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0
-  flex flex-col items-center gap-y-2">
-
+    bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
+      <div className=" pt-24 md:pb-50 lg:pb-100 relative z-10 pb-24">
+          <h2 className="text-[#15528A]  text-center leading-tight text-[70px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0 flex flex-col items-center gap-y-2">
             <span className="font-parisienne">Dhiraj</span>
-
             <span className="text-xl sm:text-3xl tracking-[10px] font-cormorant">WEDS</span>
-
             <span className="font-parisienne">Ritika</span>
-
           </h2>
 
           <div className="flex flex-col items-center text-center gap-6 mt-0  lg:pt-150 pt-150">
-
-
             <img
               src="/assets/ganesh_inter.png"
-              alt=""
+              alt="ganesh"
               className="md:w-40 w-28 h-auto"
             />
             <h2 className="text-white md:text-2xl text-[17px] text-center">
@@ -206,23 +189,23 @@ export default function Home() {
       </div>
 
 
-<div className=" bg-[url('/assets/meet.png')] md:bg-cover bg-contain bg-no-repeat">
-  <div className="lg:h-400 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
-    
-    <h1 className="lg:text-3xl md:text-xl text-2xl text-[#E1EF1E] font-Cormorant">
-      MEET THE
-    </h1>
+      <div className=" bg-[url('/assets/meet.png')] md:bg-cover bg-contain bg-no-repeat">
+        <div className="lg:h-400 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
 
-    <h2 className="lg:text-[130px] md:text-2xl text-3xl text-[#00EAFF] lg:pt-12 font-Cormorant-upright md:leading-12 leading-8">
-      <span className="text-[#ADBAFF]">Bride</span> <br /> 
-      & <br /> 
-      <span className="text-[#3FA9FF]">Groom</span>
-    </h2>
+          <h1 className="lg:text-3xl md:text-xl text-2xl text-[#E1EF1E] font-Cormorant">
+            MEET THE
+          </h1>
 
-  </div>
-</div>
-<CoupleMessage/>
-<MarriageCountdown/>
+          <h2 className="lg:text-[130px] md:text-2xl text-3xl text-[#00EAFF] lg:pt-12 font-Cormorant-upright md:leading-12 leading-8">
+            <span className="text-[#ADBAFF]">Bride</span> <br />
+            & <br />
+            <span className="text-[#3FA9FF]">Groom</span>
+          </h2>
+
+        </div>
+      </div>
+      <CoupleMessage />
+      <MarriageCountdown />
     </div>
   );
 }
