@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MarriageCountdown from "./components/MarriageCountdown";
+import CoupleMessage from "./components/CoupleMessage";
 
 export default function Home() {
   const events = [
@@ -78,7 +79,7 @@ export default function Home() {
     overflow-hidden
     relative
   "
-      ><div className=" pt-24 md:pb-50 relative z-10 pb-24">
+      ><div className=" pt-24 md:pb-50 lg:pb-120 relative z-10 pb-24">
 
           <h2 className="text-[#15528A]  text-center leading-tight
      text-[70px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0
@@ -205,13 +206,8 @@ export default function Home() {
       </div>
 
 
-
-
-
-
-
 <div className=" bg-[url('/assets/meet.png')] md:bg-cover bg-contain bg-no-repeat">
-  <div className="lg:h-325 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
+  <div className="lg:h-400 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
     
     <h1 className="lg:text-3xl md:text-xl text-2xl text-[#E1EF1E] font-Cormorant">
       MEET THE
@@ -225,7 +221,7 @@ export default function Home() {
 
   </div>
 </div>
-
+<CoupleMessage/>
 <MarriageCountdown/>
     </div>
   );

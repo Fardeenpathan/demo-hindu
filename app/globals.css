@@ -46,3 +46,36 @@ body {
 .font-cormorant-infant {
   font-family: 'Cormorant Infant', serif;
 }
+
+.mySwiper {
+  padding: 60px 0;
+}
+
+.mySwiper .swiper-slide {
+  transition: all 0.4s ease;
+  transform: scale(0.7);
+  opacity: 0.5;
+}
+
+.mySwiper .swiper-slide-prev,
+.mySwiper .swiper-slide-next {
+  transform: scale(0.85);
+  opacity: 0.8;
+}
+
+.mySwiper .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.mySwiper img {
+  width: 100%;
+  border-radius: 25px;
+  border: 4px solid #e0a23a;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #ffcc00;   /* active bullet color */
+  opacity: 1;
+}
