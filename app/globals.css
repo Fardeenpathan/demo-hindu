@@ -61,7 +61,7 @@ body {
 .mySwiper .swiper-slide-next {
   transform: scale(0.85);
   opacity: 0.8;
-}
+}  
 
 .mySwiper .swiper-slide-active {
   transform: scale(1);
