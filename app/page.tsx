@@ -164,8 +164,8 @@ export default function Home() {
       <audio ref={audioRef} src="/assets/background_song.mp3" loop preload="auto" playsInline />
 
       <div className="
-    bg-[url('/assets/mobile_h5.jpg')]
-    md:bg-[url('/assets/wedding.jpg')]
+    bg-[url('/assets/hitched_mobilebg.webp')]
+    md:bg-[url('/assets/hitched_desktopbg.webp')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
 
 
@@ -259,7 +259,7 @@ export default function Home() {
 
 
 
-        <div className=" md:pt-24 pt-4 md:pb-50 lg:pb-100 relative z-10 pb-24">
+        <div className=" md:pt-24 pt-4 md:pb-50 lg:pb-160 relative z-10 pb-24">
           <h2 className="text-[#15528A]  text-center leading-tight text-[30px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0 flex flex-col items-center gap-y-2">
             <span className="font-parisienne">Dhiraj</span>
             <span className="text-xl sm:text-3xl tracking-[10px] font-cormorant">WEDS</span>
