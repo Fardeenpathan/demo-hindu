@@ -300,7 +300,7 @@ export default function Home() {
       </div>
 
 
-      <div className=" bg-[url('/assets/meet.png')] md:bg-cover bg-contain bg-no-repeat">
+      <div className=" bg-[url('/assets/meet.png')] bg-cover bg-no-repeat">
         <div className="lg:h-300 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
 
           <h1 className="lg:text-3xl md:text-xl text-2xl text-[#E1EF1E] font-Cormorant">
