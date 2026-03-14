@@ -365,7 +365,6 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
             & <br />
             <span className="text-[#3FA9FF]">Groom</span>
           </h2>
-
         </div>
       </div>
 
