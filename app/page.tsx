@@ -372,15 +372,16 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
 
 
       <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat bg-center">
-        <div className="lg:h-325 md:h-180">
+        <div className="lg:h-325 md:h-180 flex pt-80 justify-center">
+           <img src="/assets/logo.png" alt="logo" className="w-32 h-44 md:w-40 lg:w-60"/>
         </div>
       </div>
 
 
-
       {/* mobile visible section */}
       <div className="md:hidden bg-[url('/assets/bride_mobile.jpg')] bg-cover bg-no-repeat">
-        <div className="h-210">
+        <div className="h-210 flex  justify-center pt-70">
+          <img src="/assets/logo.png" alt="logo" className="w-32 h-28 md:w-40 lg:w-48"/>
         </div>
       </div>
 
@@ -389,7 +390,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
       <MarriageCountdown />
 
 
-      <div className="fixed top-5 left-5 z-50">
+      {/* <div className="fixed top-5 left-5 z-50">
   <a href="https://invitearc.com/">
     <button className="flex items-center gap-3 border-white border-2 bg-white/0 backdrop-blur text-white px-6 py-3 rounded-full shadow-lg cursor-pointer">    
       <span className="text-3xl leading-none">←</span>
@@ -399,7 +400,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
 
     </button>
   </a>
-</div>
+</div> */}
     </div>
   );
 }
