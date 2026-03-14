@@ -13,8 +13,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hindu Template",
-  description: "This is Hindu Template",
+  metadataBase: new URL("https://hargunwedsria.invitearc.com"),
+
+  openGraph: {
+    title: "Dhiraj Weds Ritika - InviteArc",
+    description: "Premium wedding invitation templates by InviteArc",
+    url: "https://hargunwedsria.invitearc.com/",
+    siteName: "InviteArc",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dhiraj Weds Ritika - InviteArc",
+      },
+    ],
+    type: "website",
+  },
+
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Dhiraj Weds Ritika - InviteArc",
+    description: "Premium wedding invitation templates by InviteArc",
+    images: ["/og.jpg"],
+  },
+
+ other: {
+    "og:image:secure_url": "https://hargunwedsria.invitearc.com/og.jpg",
+    "og:image:type": "image/jpeg",
+  },
+
+
 };
 
 export default function RootLayout({
