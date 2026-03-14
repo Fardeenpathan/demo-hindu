@@ -375,7 +375,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
 
 
       <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat bg-center">
-        <div className="lg:h-330 md:h-180">
+        <div className="lg:h-325 md:h-180">
         </div>
       </div>
 
