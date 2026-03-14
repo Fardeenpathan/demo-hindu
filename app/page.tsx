@@ -164,8 +164,8 @@ export default function Home() {
       <audio ref={audioRef} src="/assets/background_song.mp3" loop preload="auto" playsInline />
 
       <div className="
-    bg-[url('/assets/mobile_back.webp')]
-    md:bg-[url('/assets/water_bg.webp')]
+    bg-[url('/assets/mobile_h5.jpg')]
+    md:bg-[url('/assets/wedding.jpg')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
 
 
@@ -372,11 +372,26 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+
+        <div className="lg:h-350 md:h-180 h-86 md:pt-20 pt-30 md:pr-100 pr-40 flex flex-col justify-end items-center text-center md:pb-20 pb-10">
+
+          <h1 className="lg:text-3xl md:text-xl text-xl text-[#E1EF1E] font-Cormorant">
+            MEET THE
+          </h1>
+
+          <h2 className="lg:text-[130px] md:text-2xl text-3xl text-[#00EAFF] lg:pt-12 font-Cormorant-upright md:leading-12 leading-8">
+            <span className="text-[#ADBAFF]">Bride</span> <br />
+            & <br />
+            <span className="text-[#3FA9FF]">Groom</span>
+          </h2>
+      </div>
+
         </div>
       </div>
 
 
-      <div className="md:bg-[url('/assets/meet.png')] bg-[url('/assets/meet_mobile.jpg')] bg-cover bg-no-repeat bg-center">
+      {/* <div className="md:bg-[url('/assets/meet.png')] bg-[url('/assets/meet_mobile.jpg')] bg-cover bg-no-repeat bg-center">
         <div className="lg:h-350 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
 
           <h1 className="lg:text-3xl md:text-xl text-2xl text-[#E1EF1E] font-Cormorant">
@@ -389,7 +404,7 @@ export default function Home() {
             <span className="text-[#3FA9FF]">Groom</span>
           </h2>
         </div>
-      </div>
+      </div> */}
 
 
 
