@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hargunwedsria.invitearc.com"),
+  metadataBase: new URL("https://demo-hindu.netlify.app/"),
 
   openGraph: {
     title: "Dhiraj Weds Ritika - InviteArc",
     description: "Premium wedding invitation templates by InviteArc",
-    url: "https://hargunwedsria.invitearc.com/",
+    url: "https://demo-hindu.netlify.app/",
     siteName: "InviteArc",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
 
  other: {
-    "og:image:secure_url": "https://hargunwedsria.invitearc.com/og.jpg",
+    "og:image:secure_url": "https://demo-hindu.netlify.app/og.jpg",
     "og:image:type": "image/jpeg",
   },
 
