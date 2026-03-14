@@ -199,9 +199,6 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
         <FloatingLamp className="hidden lg:block absolute top-80 left-80 w-20 h-20 transform rotate-25 opacity-75" />
 
 
-
-
-
         {/* Right-to-Left Lamps - Less crowded */}
         <FloatingLamp className="absolute top-20 right-12 w-18 h-19 transform -rotate-6 opacity-85" reverse={true} />
         <FloatingLamp className="absolute top-40 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
