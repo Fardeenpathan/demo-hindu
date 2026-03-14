@@ -1,6 +1,45 @@
+"use client";
 import Image from "next/image";
 import MarriageCountdown from "./components/MarriageCountdown";
 import CoupleMessage from "./components/CoupleMessage";
+import { useMemo } from "react";
+
+
+
+const FloatingLamp = ({ className, style, reverse = false }: { className: string; style?: React.CSSProperties; reverse?: boolean }) => {
+  // Memoize random values to prevent recalculation on re-renders
+  const lampValues = useMemo(() => {
+    // const duration = 60 + Math.random() * 40; // 60–100s (very slow flow)
+    // const duration = 40 + Math.random() * 10; // 40–50s
+    const duration = 60 + Math.random() * 10; // 60–70s
+    const delay = Math.random() * 15;
+
+    // depth feel - dramatic size variety
+    const scale = Math.random() < 0.5
+      ? 0.3 + Math.random() * 0.4  // 0.3–0.7 (small lamps)
+      : 1.2 + Math.random() * 0.8; // 1.2–2.0 (large lamps)
+    const blur = scale < 0.7 ? "blur(1.5px)" : "blur(0px)";
+
+    return { duration, delay, scale, blur };
+  }, []); // Empty dependency array means these values are calculated only once
+
+  return (
+    <img
+      src="/lamp.png"
+      alt="Lamp"
+      className={`floating-lamp ${className}`}
+      style={{
+        animationName: reverse ? 'lampFlowReverse' : 'lampFlow',
+        animationDuration: `${lampValues.duration}s`,
+        animationDelay: `${lampValues.delay}s`,
+        transform: `scale(${lampValues.scale})`,
+        filter: `drop-shadow(0 0 18px rgba(255,180,90,0.9)) ${lampValues.blur}`,
+        '--scale': lampValues.scale,
+        ...style,
+      } as React.CSSProperties}
+    />
+  );
+};
 
 export default function Home() {
   const events = [
@@ -65,12 +104,85 @@ export default function Home() {
 
   ];
   return (
+    
     <div>
       <div
         className="
     bg-[url('/assets/mobile_back.jpg')]
-    md:bg-[url('/assets/water_bg.jpg')]
+    md:bg-[url('/assets/water_bg.webp')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
+      
+      
+      
+      
+     {/* Decorative Lamps - Natural Flow Pattern */}
+        {/* Left-to-Right Lamps - Less crowded */}
+        <FloatingLamp className="absolute top-10 left-8 w-18 h-18 transform rotate-12 opacity-90" />
+        <FloatingLamp className="absolute top-30 left-20 w-22 h-22 transform rotate-45 opacity-80" />
+        <FloatingLamp className="absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
+        <FloatingLamp className="absolute top-70 left-60 w-14 h-14 transform rotate-15 opacity-80" />
+        <FloatingLamp className="absolute top-90 left-80 w-20 h-20 transform rotate-25 opacity-75" />
+        <FloatingLamp className="absolute top-110 left-100 w-18 h-18 transform rotate-10 opacity-85" />
+        <FloatingLamp className="absolute top-130 left-120 w-22 h-22 transform rotate-35 opacity-75" />
+        <FloatingLamp className="absolute top-150 left-140 w-16 h-16 transform rotate-22 opacity-85" />
+        <FloatingLamp className="absolute top-170 left-160 w-20 h-20 transform rotate-18 opacity-80" />
+        <FloatingLamp className="absolute top-190 left-180 w-18 h-18 transform rotate-28 opacity-85" />
+
+
+        <FloatingLamp className="hidden lg:block absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-60 left-40 w-20 h-20 transform rotate-15 opacity-80" />
+        <FloatingLamp className="hidden lg:block absolute top-80 left-80 w-20 h-20 transform rotate-25 opacity-75" />
+        <FloatingLamp className="hidden lg:block absolute top-100 left-100 w-20 h-20 transform rotate-10 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-120 left-120 w-28 h-28 transform rotate-35 opacity-75" />
+        <FloatingLamp className="hidden lg:block absolute top-140 left-140 w-20 h-20 transform rotate-22 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-160 left-160 w-28 h-28 transform rotate-18 opacity-80" />
+        <FloatingLamp className="hidden lg:block absolute top-180 left-180 w-20 h-20 transform rotate-28 opacity-85" />
+
+         <FloatingLamp className="hidden lg:block absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-60 left-40 w-20 h-20 transform rotate-15 opacity-80" />
+        <FloatingLamp className="hidden lg:block absolute top-80 left-80 w-20 h-20 transform rotate-25 opacity-75" />
+        
+
+
+
+
+        {/* Right-to-Left Lamps - Less crowded */}
+        {/* <FloatingLamp className="absolute top-20 right-12 w-32 h-32 transform -rotate-6 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-40 right-32 w-28 h-28 transform -rotate-12 opacity-75" reverse={true} />
+        <FloatingLamp className="absolute top-60 right-52 w-22 h-22 transform -rotate-20 opacity-90" reverse={true} />
+        <FloatingLamp className="absolute top-80 right-72 w-26 h-26 transform -rotate-8 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-100 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
+        <FloatingLamp className="absolute top-120 right-112 w-24 h-24transform -rotate-25 opacity-90" reverse={true} />
+        <FloatingLamp className="absolute top-140 right-132 w-26 h-26 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="absolute top-160 right-152 w-28 h-28 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="absolute top-180 right-172 w-22 h-22 transform -rotate-22 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-200 right-192 w-26 h-26 transform -rotate-35 opacity-85" reverse={true} /> */}
+
+
+        <FloatingLamp className="hidden lg:block absolute top-30 right-12 w-20 h-20 transform -rotate-6 opacity-85" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-50 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-70 right-52 w-20 h-20 transform -rotate-20 opacity-90" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-90 right-72 w-20 h-20 transform -rotate-8 opacity-85" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-110 right-92 w-24 h-24 transform -rotate-15 opacity-80" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-130 right-112 w-20 h-20 transform -rotate-25 opacity-90" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-150 right-132 w-20 h-20 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-170 right-152 w-28 h-28 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-190 right-172 w-20 h-20 transform -rotate-22 opacity-85" reverse={true} />
+
+
+        <FloatingLamp className="hidden lg:block absolute top-150 right-132 w-20 h-20 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-170 right-152 w-20 h-20 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-190 right-172 w-20 h-20 transform -rotate-22 opacity-85" reverse={true} />
+
+
+
+
+        {/* <FallingLamps /> */}  
+      
+      
+      
+      
+      
       <div className=" md:pt-24 pt-4 md:pb-50 lg:pb-100 relative z-10 pb-24">
           <h2 className="text-[#15528A]  text-center leading-tight text-[30px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0 flex flex-col items-center gap-y-2">
             <span className="font-parisienne">Dhiraj</span>
@@ -105,7 +217,6 @@ export default function Home() {
               The Kapoor Family
             </h2>
           </div>
-
 
           <div className="mt-8 text-center">
             <h2 className="text-white font-cormorant 
@@ -204,6 +315,8 @@ export default function Home() {
 
         </div>
       </div>
+
+
 
       <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat">
         <div className="lg:h-325 md:h-180">
