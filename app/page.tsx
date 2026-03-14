@@ -104,18 +104,18 @@ export default function Home() {
 
   ];
   return (
-    
+
     <div>
       <div
         className="
-    bg-[url('/assets/mobile_back.jpg')]
+    bg-[url('/assets/mobile_back.webp')]
     md:bg-[url('/assets/water_bg.webp')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
-      
-      
-      
-      
-     {/* Decorative Lamps - Natural Flow Pattern */}
+
+
+
+
+        {/* Decorative Lamps - Natural Flow Pattern */}
         {/* Left-to-Right Lamps - Less crowded */}
         <FloatingLamp className="absolute top-10 left-8 w-18 h-18 transform rotate-12 opacity-90" />
         <FloatingLamp className="absolute top-30 left-20 w-16 h-16 transform rotate-45 opacity-80" />
@@ -138,10 +138,10 @@ export default function Home() {
         <FloatingLamp className="hidden lg:block absolute top-160 left-160 w-28 h-28 transform rotate-18 opacity-80" />
         <FloatingLamp className="hidden lg:block absolute top-180 left-180 w-20 h-20 transform rotate-28 opacity-85" />
 
-         <FloatingLamp className="hidden lg:block absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
         <FloatingLamp className="hidden lg:block absolute top-60 left-40 w-20 h-20 transform rotate-15 opacity-80" />
         <FloatingLamp className="hidden lg:block absolute top-80 left-80 w-20 h-20 transform rotate-25 opacity-75" />
-        
+
 
 
 
@@ -177,13 +177,13 @@ export default function Home() {
 
 
 
-        {/* <FallingLamps /> */}  
-      
-      
-      
-      
-      
-      <div className=" md:pt-24 pt-4 md:pb-50 lg:pb-100 relative z-10 pb-24">
+        {/* <FallingLamps /> */}
+
+
+
+
+
+        <div className=" md:pt-24 pt-4 md:pb-50 lg:pb-100 relative z-10 pb-24">
           <h2 className="text-[#15528A]  text-center leading-tight text-[30px] sm:text-5xl lg:text-[100px] md:pb-370 pb-0 flex flex-col items-center gap-y-2">
             <span className="font-parisienne">Dhiraj</span>
             <span className="text-xl sm:text-3xl tracking-[10px] font-cormorant">WEDS</span>
@@ -300,8 +300,8 @@ export default function Home() {
       </div>
 
 
-      <div className="md:bg-[url('/assets/meet.png')] bg-[url('/assets/meet_mobile.jpg')] bg-cover bg-no-repeat">
-        <div className="lg:h-300 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
+      <div className="md:bg-[url('/assets/meet.png')] bg-[url('/assets/meet_mobile.jpg')] bg-cover bg-no-repeat bg-center">
+        <div className="lg:h-350 md:h-180 h-86 md:pt-20 md:pr-100 pr-40 flex flex-col justify-center items-center text-center">
 
           <h1 className="lg:text-3xl md:text-xl text-2xl text-[#E1EF1E] font-Cormorant">
             MEET THE
@@ -318,10 +318,12 @@ export default function Home() {
 
 
 
-      <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat">
-        <div className="lg:h-325 md:h-180">
+      <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat bg-center">
+        <div className="lg:h-330 md:h-180">
         </div>
       </div>
+
+
 
       {/* mobile visible section */}
       <div className="md:hidden bg-[url('/assets/bride_mobile.jpg')] bg-cover bg-no-repeat">

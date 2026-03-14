@@ -73,6 +73,10 @@ export default function CoupleMessage() {
               <SwiperSlide>
                 <img src="/assets/image3.jpg" />
               </SwiperSlide>
+
+               <SwiperSlide>
+                <img src="/assets/image4.jpg" />
+              </SwiperSlide>
             </Swiper>
           </div>
 
@@ -138,9 +142,12 @@ export default function CoupleMessage() {
             <h2 className="lg:text-5xl text-2xl text-center text-[#FFF5B9] lg:pt-6 font-Cormorant-upright">
               Looking Forward to <br /> Seeing You
             </h2>
-            <h2 className="lg:text-3xl text-2xl text-center text-[#FFF5B9] pt-6 font-Cormorant-upright">
+             <div className="flex flex-col-1 gap-4 justify-center items-center mt-4">
+                       <a href="#" target="_blank"><img src="/assets/whatsapp.png" alt="" className="h-10 w-10"/></a>
+                        <h2 className="lg:text-3xl text-2xl text-center text-[#FFF5B9]  font-Cormorant-upright">
               Click the Link to RSVP
             </h2>
+                    </div>
           </div>
         </div>
       </div>
