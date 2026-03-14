@@ -208,21 +208,21 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
         <FloatingLamp className="absolute top-60 right-52 w-18 h-18 transform -rotate-20 opacity-90" reverse={true} />
         <FloatingLamp className="absolute top-80 right-72 w-16 h-16 transform -rotate-8 opacity-85" reverse={true} />
         <FloatingLamp className="absolute top-100 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
-        <FloatingLamp className="absolute top-120 right-112 w-20 h-20 transform -rotate-25 opacity-90" reverse={true} />
+        <FloatingLamp className="absolute top-120 right-112 w-18 h-18 transform -rotate-25 opacity-90" reverse={true} />
         <FloatingLamp className="absolute top-140 right-132 w-16 h-16 transform -rotate-18 opacity-80" reverse={true} />
         <FloatingLamp className="absolute top-160 right-152 w-18 h-18 transform -rotate-30 opacity-75" reverse={true} />
         <FloatingLamp className="absolute top-180 right-172 w-16 h-16 transform -rotate-22 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-200 right-192 w-20 h-20 transform -rotate-35 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-200 right-192 w-18 h-18 transform -rotate-35 opacity-85" reverse={true} />
 
 
         <FloatingLamp className="hidden lg:block absolute top-30 right-12 w-20 h-20 transform -rotate-6 opacity-85" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-50 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-70 right-52 w-20 h-20 transform -rotate-20 opacity-90" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-90 right-72 w-20 h-20 transform -rotate-8 opacity-85" reverse={true} />
-        <FloatingLamp className="hidden lg:block absolute top-110 right-92 w-24 h-24 transform -rotate-15 opacity-80" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-110 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-130 right-112 w-20 h-20 transform -rotate-25 opacity-90" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-150 right-132 w-20 h-20 transform -rotate-18 opacity-80" reverse={true} />
-        <FloatingLamp className="hidden lg:block absolute top-170 right-152 w-28 h-28 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-170 right-152 w-18 h-18 transform -rotate-30 opacity-75" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-190 right-172 w-20 h-20 transform -rotate-22 opacity-85" reverse={true} />
 
 
