@@ -147,16 +147,16 @@ export default function Home() {
 
 
         {/* Right-to-Left Lamps - Less crowded */}
-        {/* <FloatingLamp className="absolute top-20 right-12 w-32 h-32 transform -rotate-6 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-40 right-32 w-28 h-28 transform -rotate-12 opacity-75" reverse={true} />
+        <FloatingLamp className="absolute top-20 right-12 w-18 h-19 transform -rotate-6 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-40 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
         <FloatingLamp className="absolute top-60 right-52 w-22 h-22 transform -rotate-20 opacity-90" reverse={true} />
-        <FloatingLamp className="absolute top-80 right-72 w-26 h-26 transform -rotate-8 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-80 right-72 w-16 h-16 transform -rotate-8 opacity-85" reverse={true} />
         <FloatingLamp className="absolute top-100 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
-        <FloatingLamp className="absolute top-120 right-112 w-24 h-24transform -rotate-25 opacity-90" reverse={true} />
-        <FloatingLamp className="absolute top-140 right-132 w-26 h-26 transform -rotate-18 opacity-80" reverse={true} />
-        <FloatingLamp className="absolute top-160 right-152 w-28 h-28 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="absolute top-120 right-112 w-20 h-20 transform -rotate-25 opacity-90" reverse={true} />
+        <FloatingLamp className="absolute top-140 right-132 w-22 h-22 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="absolute top-160 right-152 w-18 h-18 transform -rotate-30 opacity-75" reverse={true} />
         <FloatingLamp className="absolute top-180 right-172 w-22 h-22 transform -rotate-22 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-200 right-192 w-26 h-26 transform -rotate-35 opacity-85" reverse={true} /> */}
+        <FloatingLamp className="absolute top-200 right-192 w-22 h-22 transform -rotate-35 opacity-85" reverse={true} />
 
 
         <FloatingLamp className="hidden lg:block absolute top-30 right-12 w-20 h-20 transform -rotate-6 opacity-85" reverse={true} />
@@ -324,10 +324,12 @@ export default function Home() {
       </div>
 
       {/* mobile visible section */}
-      <div className="md:hidden bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat">
+      <div className="md:hidden bg-[url('/assets/bride_mobile.jpg')] bg-cover bg-no-repeat">
         <div className="h-210">
         </div>
       </div>
+
+
       <CoupleMessage />
       <MarriageCountdown />
     </div>
