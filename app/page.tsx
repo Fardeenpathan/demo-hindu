@@ -2,7 +2,7 @@
 import Image from "next/image";
 import MarriageCountdown from "./components/MarriageCountdown";
 import CoupleMessage from "./components/CoupleMessage";
-import {  useEffect, useState, useRef, useMemo } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 
 
 
@@ -104,7 +104,7 @@ export default function Home() {
 
   ];
 
-const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [started, setStarted] = useState(false);
   const [playing, setPlaying] = useState(false);
 
@@ -117,7 +117,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
       await audio.play();
       setStarted(true);
       setPlaying(true);
-    } catch {}
+    } catch { }
   };
 
   const toggleMusic = async () => {
@@ -131,7 +131,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
       try {
         await audio.play();
         setPlaying(true);
-      } catch {}
+      } catch { }
     }
   };
 
@@ -161,7 +161,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
         {playing ? "⏸" : "▶"}
       </button>
 
-      <audio ref={audioRef} src="/assets/background_song.mp3" loop preload="auto" playsInline/>
+      <audio ref={audioRef} src="/assets/background_song.mp3" loop preload="auto" playsInline />
 
       <div className="
     bg-[url('/assets/mobile_back.webp')]
@@ -173,16 +173,30 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
 
         {/* Decorative Lamps - Natural Flow Pattern */}
         {/* Left-to-Right Lamps - Less crowded */}
-        <FloatingLamp className="absolute top-10 left-8 w-18 h-18 transform rotate-12 opacity-90" />
-        <FloatingLamp className="absolute top-30 left-20 w-16 h-16 transform rotate-45 opacity-80" />
-        <FloatingLamp className="absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
-        <FloatingLamp className="absolute top-70 left-60 w-14 h-14 transform rotate-15 opacity-80" />
-        <FloatingLamp className="absolute top-90 left-80 w-20 h-20 transform rotate-25 opacity-75" />
-        <FloatingLamp className="absolute top-110 left-100 w-18 h-18 transform rotate-10 opacity-85" />
-        <FloatingLamp className="absolute top-130 left-120 w-20 h-20 transform rotate-35 opacity-75" />
-        <FloatingLamp className="absolute top-150 left-140 w-16 h-16 transform rotate-22 opacity-85" />
-        <FloatingLamp className="absolute top-170 left-160 w-20 h-20 transform rotate-18 opacity-80" />
-        <FloatingLamp className="absolute top-190 left-180 w-18 h-18 transform rotate-28 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-10 left-8 w-18 h-18 transform rotate-12 opacity-90" />
+        <FloatingLamp className="hidden lg:block absolute top-30 left-20 w-16 h-16 transform rotate-45 opacity-80" />
+        <FloatingLamp className="hidden lg:block absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-70 left-60 w-14 h-14 transform rotate-15 opacity-80" />
+        <FloatingLamp className="hidden lg:block absolute top-90 left-80 w-20 h-20 transform rotate-25 opacity-75" />
+        <FloatingLamp className="hidden lg:block absolute top-110 left-100 w-18 h-18 transform rotate-10 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-130 left-120 w-20 h-20 transform rotate-35 opacity-75" />
+        <FloatingLamp className="hidden lg:block absolute top-150 left-140 w-16 h-16 transform rotate-22 opacity-85" />
+        <FloatingLamp className="hidden lg:block absolute top-170 left-160 w-20 h-20 transform rotate-18 opacity-80" />
+        <FloatingLamp className="hidden lg:block absolute top-190 left-180 w-18 h-18 transform rotate-28 opacity-85" />
+
+
+
+        <FloatingLamp className="lg:hidden absolute top-10 left-8 w-12 h-12 transform rotate-12 opacity-90" />
+        <FloatingLamp className="lg:hidden absolute top-30 left-20 w-12 h-12 transform rotate-45 opacity-80" />
+        <FloatingLamp className="lg:hidden absolute top-50 left-40 w-10 h-10 transform rotate-30 opacity-85" />
+        <FloatingLamp className="lg:hidden absolute top-70 left-60 w-10 h-10 transform rotate-15 opacity-80" />
+        <FloatingLamp className="lg:hidden absolute top-90 left-80 w-12 h-12 transform rotate-25 opacity-75" />
+        <FloatingLamp className="lg:hidden absolute top-110 left-100 w-12 h-12 transform rotate-10 opacity-85" />
+        <FloatingLamp className="lg:hidden absolute top-130 left-120 w-12 h-12 transform rotate-35 opacity-75" />
+        <FloatingLamp className="lg:hidden absolute top-150 left-140 w-12 h-12 transform rotate-22 opacity-85" />
+        <FloatingLamp className="lg:hidden absolute top-170 left-160 w-12 h-12 transform rotate-18 opacity-80" />
+        <FloatingLamp className="lg:hidden absolute top-190 left-180 w-12 h-12 transform rotate-28 opacity-85" />
+
 
 
         <FloatingLamp className="hidden lg:block absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
@@ -200,16 +214,16 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
 
 
         {/* Right-to-Left Lamps - Less crowded */}
-        <FloatingLamp className="absolute top-20 right-12 w-18 h-19 transform -rotate-6 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-40 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
-        <FloatingLamp className="absolute top-60 right-52 w-18 h-18 transform -rotate-20 opacity-90" reverse={true} />
-        <FloatingLamp className="absolute top-80 right-72 w-16 h-16 transform -rotate-8 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-100 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
-        <FloatingLamp className="absolute top-120 right-112 w-18 h-18 transform -rotate-25 opacity-90" reverse={true} />
-        <FloatingLamp className="absolute top-140 right-132 w-16 h-16 transform -rotate-18 opacity-80" reverse={true} />
-        <FloatingLamp className="absolute top-160 right-152 w-18 h-18 transform -rotate-30 opacity-75" reverse={true} />
-        <FloatingLamp className="absolute top-180 right-172 w-16 h-16 transform -rotate-22 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-200 right-192 w-18 h-18 transform -rotate-35 opacity-85" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-20 right-12 w-18 h-19 transform -rotate-6 opacity-85" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-40 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-60 right-52 w-18 h-18 transform -rotate-20 opacity-90" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-80 right-72 w-16 h-16 transform -rotate-8 opacity-85" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-100 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-120 right-112 w-18 h-18 transform -rotate-25 opacity-90" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-140 right-132 w-16 h-16 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-160 right-152 w-18 h-18 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-180 right-172 w-16 h-16 transform -rotate-22 opacity-85" reverse={true} />
+        <FloatingLamp className="hidden lg:block absolute top-200 right-192 w-18 h-18 transform -rotate-35 opacity-85" reverse={true} />
 
 
         <FloatingLamp className="hidden lg:block absolute top-30 right-12 w-20 h-20 transform -rotate-6 opacity-85" reverse={true} />
@@ -227,7 +241,16 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
         <FloatingLamp className="hidden lg:block absolute top-170 right-152 w-20 h-20 transform -rotate-30 opacity-75" reverse={true} />
         <FloatingLamp className="hidden lg:block absolute top-190 right-172 w-20 h-20 transform -rotate-22 opacity-85" reverse={true} />
 
-
+ <FloatingLamp className="lg:hidden absolute top-20 right-12 w-12 h-12 transform -rotate-6 opacity-85" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-40 right-32 w-12 h-12 transform -rotate-12 opacity-75" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-60 right-52 w-12 h-14 transform -rotate-20 opacity-90" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-80 right-72 w-10 h-10 transform -rotate-8 opacity-85" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-100 right-92 w-12 h-12 transform -rotate-15 opacity-80" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-120 right-112 w-10 h-10 transform -rotate-25 opacity-90" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-140 right-132 w-12 h-12 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-160 right-152 w-12 h-12 transform -rotate-30 opacity-75" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-180 right-172 w-12 h-12 transform -rotate-22 opacity-85" reverse={true} />
+        <FloatingLamp className="lg:hidden absolute top-200 right-192 w-10 h-10 transform -rotate-35 opacity-85" reverse={true} />
 
 
         {/* <FallingLamps /> */}
@@ -372,7 +395,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
 
       <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat bg-center">
         <div className="lg:h-325 md:h-180 flex pt-80 justify-center">
-           <img src="/assets/logo.png" alt="logo" className="w-32 h-44 md:w-40 lg:w-60"/>
+          <img src="/assets/logo.png" alt="logo" className="w-32 h-44 md:w-40 lg:w-60" />
         </div>
       </div>
 
@@ -380,7 +403,7 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
       {/* mobile visible section */}
       <div className="md:hidden bg-[url('/assets/bride_mobile.jpg')] bg-cover bg-no-repeat">
         <div className="h-210 flex  justify-center pt-70">
-          <img src="/assets/logo.png" alt="logo" className="w-32 h-28 md:w-40 lg:w-48"/>
+          <img src="/assets/logo.png" alt="logo" className="w-32 h-28 md:w-40 lg:w-48" />
         </div>
       </div>
       <CoupleMessage />
