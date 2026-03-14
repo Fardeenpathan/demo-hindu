@@ -120,7 +120,7 @@ export default function CoupleMessage() {
                 <img
                   src="/assets/drive_h.png"
                   alt="drive"
-                  className="lg:h-22 lg:w-24 h-26 w-32 "
+                  className="lg:h-22 lg:w-24 h-28 w-32 "
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Staff
