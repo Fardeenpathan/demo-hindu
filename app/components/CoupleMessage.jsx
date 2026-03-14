@@ -26,7 +26,18 @@ export default function CoupleMessage() {
             <Swiper
               effect={"coverflow"}
               centeredSlides={true}
-              slidesPerView={5}
+              // slidesPerView={5}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1.5,
+                },
+                640: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 5,
+                },
+              }}
               spaceBetween={-60}
               loop={true}
               autoplay={{
@@ -74,7 +85,7 @@ export default function CoupleMessage() {
                 <img src="/assets/image3.jpg" />
               </SwiperSlide>
 
-               <SwiperSlide>
+              <SwiperSlide>
                 <img src="/assets/image4.jpg" />
               </SwiperSlide>
             </Swiper>
@@ -142,12 +153,14 @@ export default function CoupleMessage() {
             <h2 className="lg:text-5xl text-2xl text-center text-[#FFF5B9] lg:pt-6 font-Cormorant-upright">
               Looking Forward to <br /> Seeing You
             </h2>
-             <div className="flex flex-col-1 gap-4 justify-center items-center mt-4">
-                       <a href="#" target="_blank"><img src="/assets/whatsapp.png" alt="" className="h-10 w-10"/></a>
-                        <h2 className="lg:text-3xl text-2xl text-center text-[#FFF5B9]  font-Cormorant-upright">
-              Click the Link to RSVP
-            </h2>
-                    </div>
+            <div className="flex flex-col-1 gap-4 justify-center items-center mt-4">
+              <a href="#" target="_blank">
+                <img src="/assets/whatsapp.png" alt="" className="h-10 w-10" />
+              </a>
+              <h2 className="lg:text-3xl text-2xl text-center text-[#FFF5B9]  font-Cormorant-upright">
+                Click the Link to RSVP
+              </h2>
+            </div>
           </div>
         </div>
       </div>
