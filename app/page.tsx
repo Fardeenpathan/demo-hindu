@@ -383,11 +383,8 @@ const audioRef = useRef<HTMLAudioElement | null>(null);
           <img src="/assets/logo.png" alt="logo" className="w-32 h-28 md:w-40 lg:w-48"/>
         </div>
       </div>
-
-
       <CoupleMessage />
       <MarriageCountdown />
-
 
       {/* <div className="fixed top-5 left-5 z-50">
   <a href="https://invitearc.com/">
