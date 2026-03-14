@@ -395,7 +395,7 @@ export default function Home() {
 
       <div className="hidden md:block bg-[url('/assets/bride.jpg')] bg-cover bg-no-repeat bg-center">
         <div className="lg:h-325 md:h-180 flex pt-80 justify-center">
-          <img src="/assets/logo.png" alt="logo" className="w-32 h-44 md:w-40 lg:w-60" />
+          <img src="/assets/logo.png" alt="logo" className="w-32 h-48 md:w-40 lg:w-60" />
         </div>
       </div>
 

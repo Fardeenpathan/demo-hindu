@@ -103,9 +103,9 @@ export default function CoupleMessage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 lg:gap-24 gap-10 sm:gap-16">
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-                  src="/assets/weather.png"
+                  src="/assets/weather_h.png"
                   alt="weather"
-                  className="lg:h-24 lg:w-24 h-32 w-32 "
+                  className="lg:h-20 lg:w-24 h-26 w-32 "
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Weather
@@ -118,9 +118,9 @@ export default function CoupleMessage() {
               </div>
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-                  src="/assets/drive.png"
+                  src="/assets/drive_h.png"
                   alt="drive"
-                  className="lg:h-24 lg:w-24 h-32 w-32 "
+                  className="lg:h-22 lg:w-24 h-26 w-32 "
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Staff
@@ -133,9 +133,9 @@ export default function CoupleMessage() {
               </div>
               <div className="flex flex-col items-center justify-center text-center">
                 <img
-                  src="/assets/car_n.png"
+                  src="/assets/car_h.png"
                   alt="car"
-                  className="lg:h-24 lg:w-24 h-32 w-32 "
+                  className="lg:h-20 lg:w-24 h-26 w-32 "
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Parking
