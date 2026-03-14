@@ -118,12 +118,12 @@ export default function Home() {
      {/* Decorative Lamps - Natural Flow Pattern */}
         {/* Left-to-Right Lamps - Less crowded */}
         <FloatingLamp className="absolute top-10 left-8 w-18 h-18 transform rotate-12 opacity-90" />
-        <FloatingLamp className="absolute top-30 left-20 w-22 h-22 transform rotate-45 opacity-80" />
+        <FloatingLamp className="absolute top-30 left-20 w-16 h-16 transform rotate-45 opacity-80" />
         <FloatingLamp className="absolute top-50 left-40 w-20 h-20 transform rotate-30 opacity-85" />
         <FloatingLamp className="absolute top-70 left-60 w-14 h-14 transform rotate-15 opacity-80" />
         <FloatingLamp className="absolute top-90 left-80 w-20 h-20 transform rotate-25 opacity-75" />
         <FloatingLamp className="absolute top-110 left-100 w-18 h-18 transform rotate-10 opacity-85" />
-        <FloatingLamp className="absolute top-130 left-120 w-22 h-22 transform rotate-35 opacity-75" />
+        <FloatingLamp className="absolute top-130 left-120 w-20 h-20 transform rotate-35 opacity-75" />
         <FloatingLamp className="absolute top-150 left-140 w-16 h-16 transform rotate-22 opacity-85" />
         <FloatingLamp className="absolute top-170 left-160 w-20 h-20 transform rotate-18 opacity-80" />
         <FloatingLamp className="absolute top-190 left-180 w-18 h-18 transform rotate-28 opacity-85" />
@@ -149,14 +149,14 @@ export default function Home() {
         {/* Right-to-Left Lamps - Less crowded */}
         <FloatingLamp className="absolute top-20 right-12 w-18 h-19 transform -rotate-6 opacity-85" reverse={true} />
         <FloatingLamp className="absolute top-40 right-32 w-20 h-20 transform -rotate-12 opacity-75" reverse={true} />
-        <FloatingLamp className="absolute top-60 right-52 w-22 h-22 transform -rotate-20 opacity-90" reverse={true} />
+        <FloatingLamp className="absolute top-60 right-52 w-18 h-18 transform -rotate-20 opacity-90" reverse={true} />
         <FloatingLamp className="absolute top-80 right-72 w-16 h-16 transform -rotate-8 opacity-85" reverse={true} />
         <FloatingLamp className="absolute top-100 right-92 w-18 h-18 transform -rotate-15 opacity-80" reverse={true} />
         <FloatingLamp className="absolute top-120 right-112 w-20 h-20 transform -rotate-25 opacity-90" reverse={true} />
-        <FloatingLamp className="absolute top-140 right-132 w-22 h-22 transform -rotate-18 opacity-80" reverse={true} />
+        <FloatingLamp className="absolute top-140 right-132 w-16 h-16 transform -rotate-18 opacity-80" reverse={true} />
         <FloatingLamp className="absolute top-160 right-152 w-18 h-18 transform -rotate-30 opacity-75" reverse={true} />
-        <FloatingLamp className="absolute top-180 right-172 w-22 h-22 transform -rotate-22 opacity-85" reverse={true} />
-        <FloatingLamp className="absolute top-200 right-192 w-22 h-22 transform -rotate-35 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-180 right-172 w-16 h-16 transform -rotate-22 opacity-85" reverse={true} />
+        <FloatingLamp className="absolute top-200 right-192 w-20 h-20 transform -rotate-35 opacity-85" reverse={true} />
 
 
         <FloatingLamp className="hidden lg:block absolute top-30 right-12 w-20 h-20 transform -rotate-6 opacity-85" reverse={true} />
